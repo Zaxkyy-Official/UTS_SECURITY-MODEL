@@ -1,0 +1,24 @@
+meta {
+  name: 1. POST Secure Produk (Enkripsi & Simpan ke DB B)
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:5000/api/secure/produk
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "nama_produk": "Laptop Gaming Pro",
+    "harga_produk": 15000000,
+    "foto_produk": "laptop.jpg",
+    "id_kategori": 1
+  }
+}
